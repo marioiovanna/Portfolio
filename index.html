@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Web Portfolio</title>
+    <!-- ICON -->
+    <link rel="icon" href="img/icon.png">
+
+    <!-- LIBRARY TEMPLATE -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- JavaScript plugins, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <!-- Font Awsome -->
+    <script src="https://use.fontawesome.com/0b9da4457b.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <!-- PERSONAL SCRIPTS & CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="hover-effect.css">
+    <script src="validator.js"></script>
+    <script src="scroll.js"></script>
+    <script src="contact.js"></script>
+
+</head>
+<body>
+
+<!-- Video background -->
+<video loop playsinline autoplay muted id="video-background">
+    <source src="img/background-video.mp4" type="video/mp4">
+</video>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <span class="navbar-brand mb-0 title-nav">
+            My Portfolio
+        </span>
+
+        <!-- CONTACT ME BUTTON DISABLE -->
+        <!--<button class="btn btn-outline-light contact-me" data-scroll-to="#id1" data-scroll-focus="#id2"-->
+                <!--data-scroll-speed="700" data-scroll-offset="200">-->
+            <!--Contact Me-->
+        <!--</button>-->
+
+
+        <!-- Social Media BTNS -->
+        <div class="col-auto">
+            <a href="https://github.com/marioiovanna" target="_blank" class="btn btn-light"><i
+                    class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/mario-iovanna-05110a33/" target="_blank" class="btn btn-info"><i
+                    class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/mario.iovanna.5" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<!-- MAIN -->
+<div class="container">
+    <div class="row">
+
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <img src="img/IMG_7690.JPG" alt="picture" class="img-thumbnail img-fluid"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right bar -->
+        <div class="col-md-3">
+
+            <!-- Profile picture-->
+            <div class="card profile">
+                <img class="card-img-top" src="img/back-profile.jpg" alt="Card image cap">
+
+                <a data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <img src="img/IMG_76902.jpg" alt="profile-pic" class=" img-thumbnail profile-pic">
+                </a>
+
+                <div class="card-body">
+                    <h4 class="card-title text-center">Mario Iovanna</h4>
+                    <p class="card-text">Bilingual Junior Web Developer specializing in front end development.</p>
+                    <p>Strong background in project management and customer relations.</p>
+                </div>
+            </div>
+
+            <br>
+
+            <!--Profile data -->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">About Me</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Education</h6>
+                    <ul>
+                        <li>I.A.G. Hospitality Mgmt
+                        </li>
+                        <li>U.C.F. Full Stack Development</li>
+                    </ul>
+
+                    <h6 class="card-subtitle mb-2 text-muted">Languages</h6>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Page middle -->
+        <div class="col-md-9">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">
+                    <h3>Home / Projects</h3>
+                </li>
+            </ol>
+
+            <div class="jumbotron jobs">
+
+                <!-- NEW PROJECT -->
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingNew">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="Travel Blog" data-toggle="collapse"
+                                   href="#collapseNew" aria-expanded="false" aria-controls="collapseNew">
+                                    Travel Blog
+                                    <span class="badge badge-secondary"> New</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNew" class="collapse" role="tabpanel" aria-labelledby="headingNew"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Family travel blog to Thailand and San Francisco, and adding cities.
+                                    Background video is one of the places visit.</p>
+                                <p>Web blog with 360 images-videos and VR content.</p>
+
+                                <div class="alert alert-danger text-center" role="alert">
+                                    Page under construction.
+                                </div>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/Back-Future-Game/master/assests/img/game-pics/main.PNG"/>
+
+                                <!--<style type="text/css">.kuula7l9pg {-->
+                                    <!--width: 100%;-->
+                                    <!--height: 480px;-->
+                                    <!--max-width: 100%;-->
+                                    <!--max-height: 100vw;-->
+                                <!--}</style>-->
+                                <!--<iframe class="kuula7l9pg" frameborder="0" scrolling="no" allowfullscreen="true"-->
+                                        <!--src="https://kuula.co/share/7l9pG?fs=0&thumbs=0&logo=0"></iframe>-->
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/Travel-Blog" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <button href="#" target="_blank" class="btn btn-outline-primary" disabled>
+                                            <i class="fa fa-laptop" aria-hidden="true"></i> Live Web Page
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 1 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="Back to the Future - RPG Game"
+                                   data-toggle="collapse" href="#collapseOne" aria-expanded="false"
+                                   aria-controls="collapseOne">
+                                    Back to the Future - RPG Game
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Game created on HTML, CSS and Javascript. Using concept learn on class and using
+                                    images from the web.
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/Back-Future-Game/master/assests/img/game-pics/main.PNG"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/Back-Future-Game" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://marioiovanna.github.io/Back-Future-Game/" target="_blank"
+                                           class="btn btn-outline-primary">
+                                            <i class="fa fa-laptop" aria-hidden="true"></i> Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 2 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="Trivia Game - Flinstone Theme"
+                                   data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                                   aria-controls="collapseTwo">
+                                    Trivia Game - Flinstone Theme
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Trivia game base on The Flinstone Universe. Where we have to answer the
+                                    questions.
+                                    Game content 6 questions, with 3 diferents possible answers.
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/TriviaGame/master/assets/img/game-screens/start.PNG"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/TriviaGame" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://marioiovanna.github.io/TriviaGame/" target="_blank"
+                                           class="btn btn-outline-primary"><i class="fa fa-laptop"
+                                                                              aria-hidden="true"></i> Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 3 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="Psychic Game" data-toggle="collapse"
+                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Psychic Game
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    My first game created in HTML adding Javascript language.
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/Psychic-Game/master/assets/img/work.png"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/Psychic-Game" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://marioiovanna.github.io/Psychic-Game/" target="_blank"
+                                           class="btn btn-outline-primary"><i class="fa fa-laptop"
+                                                                              aria-hidden="true"></i> Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 4 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingFour">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="Pet Finder App" data-toggle="collapse"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Pet Finder App
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    App where we can math with a new pet just on a simple Survey. Using HTML5, CSS3,
+                                    NodeJS and Express, to handle the server on the background.
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/FriendFinder/master/app/public/app-pic/main.PNG"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/FriendFinder" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://fathomless-sands-65102.herokuapp.com/index.html"
+                                           target="_blank" class="btn btn-outline-primary"><i class="fa fa-laptop"
+                                                                                              aria-hidden="true"></i>
+                                            Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 5 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingFive">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="System Clock Jquery"
+                                   data-toggle="collapse" href="#collapseFive" aria-expanded="false"
+                                   aria-controls="collapseFive">
+                                    System Clock Jquery
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Clock made with Jquery and CSS. Check files to see codes. Adding a timer and
+                                    stopwatch
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/Clock-Jquery/master/clock.PNG"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/Clock-Jquery" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://marioiovanna.github.io/Clock-Jquery/" target="_blank"
+                                           class="btn btn-outline-primary"><i class="fa fa-laptop"
+                                                                              aria-hidden="true"></i> Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- 6 PROJECT -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingSix">
+                            <h4 class="mb-0">
+                                <a class="link link--kukuri" data-letters="MySQL - Store App" data-toggle="collapse"
+                                   href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    MySQL - Store App
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    App created using NodeJs with MySql Database to administrate a POS point. Access
+                                    as
+                                    a manager to administrate the stock, or as a guest to purchase.
+                                </p>
+
+                                <hr>
+
+                                <img class="img-fluid"
+                                     src="https://raw.githubusercontent.com/marioiovanna/MySQL-Bieber/master/pics_readme/Costumer1.PNG"/>
+
+                                <hr>
+
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+
+                                        <a href="https://github.com/marioiovanna/MySQL-Bieber" target="_blank"
+                                           class="btn btn-outline-success"><i class="fa fa-github"></i> GitHub Page</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="https://marioiovanna.github.io/Clock-Jquery/" target="_blank"
+                                           class="btn btn-outline-primary"><i class="fa fa-laptop"
+                                                                              aria-hidden="true"></i> Live Web Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <!--<br>-->
+    <!--<hr>-->
+    <!--<br>-->
+
+    <!--<section id="id1">-->
+
+        <!--<form id="contact-form" method="post" action="contact.php" role="form">-->
+
+            <!--<div class="messages"></div>-->
+
+            <!--<div class="controls">-->
+
+                <!--<div class="jumbotron jumbo-form">-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-6">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="form_name">Firstname *</label>-->
+                                <!--<input id="form_name" type="text" name="name" class="form-control"-->
+                                       <!--placeholder="Please enter your firstname *" required="required"-->
+                                       <!--data-error="Firstname is required.">-->
+                                <!--<div class="help-block with-errors"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-6">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="form_lastname">Lastname *</label>-->
+                                <!--<input id="form_lastname" type="text" name="surname" class="form-control"-->
+                                       <!--placeholder="Please enter your lastname *" required="required"-->
+                                       <!--data-error="Lastname is required.">-->
+                                <!--<div class="help-block with-errors"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-6">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="form_email">Email *</label>-->
+                                <!--<input id="form_email" type="email" name="email" class="form-control"-->
+                                       <!--placeholder="Please enter your email *" required="required"-->
+                                       <!--data-error="Valid email is required.">-->
+                                <!--<div class="help-block with-errors"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-6">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="form_phone">Phone</label>-->
+                                <!--<input id="form_phone" type="tel" name="phone" class="form-control"-->
+                                       <!--placeholder="Please enter your phone">-->
+                                <!--<div class="help-block with-errors"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-12">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="form_message">Message *</label>-->
+                                <!--<textarea id="form_message" name="message" class="form-control"-->
+                                          <!--placeholder="Message for me *" rows="4" required="required"-->
+                                          <!--data-error="Please,leave us a message."></textarea>-->
+                                <!--<div class="help-block with-errors"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-12 text-center">-->
+                            <!--<input type="submit" class="btn btn-success btn-send" value="Send message">-->
+
+                            <!--<br>-->
+
+                            <!--<button class="btn btn-outline-light top"><a class="top" href="#" data-scroll-to="body">Home</a></button>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</form>-->
+    <!--</section>-->
+
+    <!--<br>-->
+    <!--<hr>-->
+
+</div>
+
+
+<!-- FOOTER -->
+<br>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+    background-image: url("img/body-back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Bitter', serif;
+}
+
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100px;
+    height: auto;
+    z-index: -100;
+}
+
+.contact-me:hover {
+    color: #000;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: -80px 0 -15px 55px;
+    position: relative;
+    border: none;
+}
+
+.profile-pic:hover {
+    width: 180px;
+    height: 180px;
+    margin: -110px 0 -15px 40px;
+}
+
+.modal {
+    margin-top: 100px;
+}
+
+.title-nav {
+    color: #e3e3e3!important;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+}
+
+.fa {
+    min-width: 30px;
+    width: auto;
+}
+
+.breadcrumb {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.jobs {
+    padding: 15px;
+    background-color: transparent;
+}
+
+#contact-form {
+    margin-top: 300px;
+    padding-bottom: 100px;
+    font-family: 'Bitter', serif;
+    color: #e3e3e3;
+}
+
+.jumbo-form {
+    background-color: rgba(100,100,100, 0.7);
+
+}
+
+.top {
+    margin-top: 30px;
+    margin-bottom: -60px;
+    color: #e3e3e3;
+    font-size: 20px;
+}
+
+.top:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
