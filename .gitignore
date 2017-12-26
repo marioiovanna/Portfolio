@@ -1,6 +1,7 @@
 #Own Files
 .img/background-video.mp4
 .img/background-video-small.mp4
+*.mp4
 
 #Mac
 .DS_Store
